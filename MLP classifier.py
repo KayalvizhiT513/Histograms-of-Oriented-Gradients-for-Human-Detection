@@ -49,7 +49,6 @@ for threshold in thresholds:
     tp = np.sum(y_test[y_pred])
     fp = np.sum(y_pred) - tp
     fn = np.sum(y_test) - tp
-    # print(threshold, y_pred, type(tp), type(fp), type(fn))
     precision.append(tp / (tp + fp))
     recall.append(tp / (tp + fn))
 
